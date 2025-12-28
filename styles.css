@@ -20,6 +20,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
 }
 
 nav .logo {
@@ -46,7 +51,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #362B15;
+  color: #ffffff;
   font-size: 95%;
   font-weight: 400;
   padding: 6px 10px;
@@ -56,6 +61,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #F3DB92;
+    color: #362B15;
 }
 
 .btn-pesan {
@@ -119,7 +125,7 @@ nav ul li a:hover {
 .hamburger .line {
   width: 25px;
   height: 1px;
-  background-color: #1f1f1f;
+  background-color: #ffffff;
   display: block;
   margin: 7px auto;
   transition: all 0.3s ease-in-out;
@@ -228,6 +234,37 @@ nav ul li a:hover {
   display: block;
 }
 
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: -20;
+  
+}
+
+.centered h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.centered p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50px);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 855px) {
   .hamburger {
@@ -237,4 +274,30 @@ nav ul li a:hover {
   nav ul {
     display: none;
   }
+
+  .centered h1 {
+    font-size: 60px;
+  }
+
+  .centered p {
+    font-size: 16px;
+    transform: translate(-50%, 35px);
+  }
+}
+/* RESPONSIVE */
+@media screen and (max-width: 515px) {
+
+    .centered h1 {
+    font-size: 30px;
+  }
+
+  .centered p {
+    font-size: 10px;
+    transform: translate(-50%, 35px);
+  }
+    nav .logo img {
+    height: 65px;
+    width: auto;
+    margin-right: 10px;
+}
 }
