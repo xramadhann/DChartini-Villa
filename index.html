@@ -177,19 +177,19 @@
         </div>
     </a>
     <a href="#" class ="room-banner">
-      <img src="assets/room-1.jpeg" alt="Kolam Renang" style="width:100%;">
+      <img src="assets/room-2.jpeg" alt="Kolam Renang" style="width:100%;">
         <div class="text-overlay">
           <h1>Kamar 02</h1>
         </div>
     </a>
     <a href="#" class ="room-banner">
-      <img src="assets/room-1.jpeg" alt="Kolam Renang" style="width:100%;">
+      <img src="assets/room-3.jpeg" alt="Kolam Renang" style="width:100%;">
         <div class="text-overlay">
           <h1>Kamar 03</h1>
         </div>
     </a>
     <a href="#" class ="room-banner">
-      <img src="assets/room-1.jpeg" alt="Kolam Renang" style="width:100%;">
+      <img src="assets/room-4.jpeg" alt="Kolam Renang" style="width:100%;">
         <div class="text-overlay">
           <h1>Kamar 04</h1>
         </div>
@@ -201,13 +201,13 @@
         </div>
     </a>
     <a href="#" class ="room-banner">
-      <img src="assets/room-1.jpeg" alt="Kolam Renang" style="width:100%;">
+      <img src="assets/room-2.jpeg" alt="Kolam Renang" style="width:100%;">
         <div class="text-overlay">
           <h1>Kamar 06</h1>
         </div>
     </a>
     <a href="#" class ="room-banner">
-      <img src="assets/room-1.jpeg" alt="Kolam Renang" style="width:100%;">
+      <img src="assets/room-3.jpeg" alt="Kolam Renang" style="width:100%;">
         <div class="text-overlay">
           <h1>Kamar 07</h1>
         </div>
@@ -224,9 +224,42 @@
         </iframe>  
     </div>
   </div>
-  <a href="#" class="act-btn">
-    <img src="assets/whatsapp.png" alt="WhatsApp" width="50%" />
+   <a href="#" class="act-btn" onclick="event.preventDefault(); openChat();">
+    <i class="fi fi-sr-chatbot-speech-bubble"></i>
 </a>
+
+<div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <button class="close-chat-btn" onclick="closeChat()">×</button>
+            <h2>D'Chartini Villa Assistance</h2>
+            <p>Tanyakan tentang kamar & fasilitas kami</p>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-content">
+                    Halo! Selamat datang di D'Chartini Villa. Saya di sini untuk membantu Anda. Silakan tanyakan tentang ketersediaan kamar, jenis kamar, atau fasilitas Villa kami. 😊
+                </div>
+            </div>
+            <div class="typing-indicator" id="typingIndicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="quick-replies">
+            <button class="quick-reply-btn" onclick="sendQuickReply('Apakah ada kamar tersedia?')">Cara Pemesanan</button>
+            <button class="quick-reply-btn" onclick="sendQuickReply('Apa saja fasilitasnya?')">Fasilitas</button>
+            <button class="quick-reply-btn" onclick="sendQuickReply('Berapa harga sewa D\'Chartini Villa?')">Harga</button>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Ketik pesan Anda..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Kirim</button>
+        </div>
+    </div>
+
   <footer class="footer">
     <div class="footer-image">
       <a href="#" class ="footer-banner">
