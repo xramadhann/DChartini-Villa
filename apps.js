@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     jumlahKamar: {
       keywords: ['berapa kamar', 'jumlah kamar', 'total kamar', 'banyak kamar', 'jenis kamar', 'tipe kamar'],
-      answer: 'Hotel kami memiliki 3 jenis kamar:\n\n1. Deluxe Room (15 kamar) - Rp 500.000/malam\n2. Suite Room (8 kamar) - Rp 850.000/malam\n3. Presidential Suite (2 kamar) - Rp 1.500.000/malam'
+      answer: 'D\'Chartini Villa memiliki total 7 kamar 🛏️ \n 2 kamar berada di lantai atas dan 5 kamar di lantai bawah 🛏️'
     },
     fasilitas: {
       keywords: ['fasilitas', 'facilities', 'layanan', 'amenities', 'apa saja'],
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     harga: {
       keywords: ['harga', 'tarif', 'biaya', 'price', 'cost', 'bayar'],
-      answer: 'Berikut daftar harga kamar kami:\n\n💰 Weekday (Senin-Kamis) : Rp.2.800.000/Malam \n💰 Weekend (Jumat-Minggu) : Rp.3.800.000/Malam\n'
+      answer: 'Berikut daftar harga kamar kami:\n\n💰 Weekday (Senin-Kamis) : Rp.2.000.000/Malam \n💰 Weekend (Jumat-Minggu) : Rp.3.000.000/Malam\n'
     },
     lokasi: {
       keywords: ['lokasi', 'alamat', 'dimana', 'location', 'address'],
