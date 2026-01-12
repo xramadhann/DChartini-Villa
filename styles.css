@@ -718,6 +718,21 @@ footer p{
   border-radius: 10px;
   transform: translate(35%);
   }
+     .chat-container {
+            position: fixed;
+            bottom: 30px;
+            left: 10%;
+            width: 370px;
+            height: 600px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            animation: slideUp 0.4s ease;
+            z-index: 998;
+        }
 }
 /* RESPONSIVE */
 @media screen and (max-width: 515px) {
